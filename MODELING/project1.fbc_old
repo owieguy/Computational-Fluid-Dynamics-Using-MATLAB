@@ -1,0 +1,8 @@
+# family_boco file written by ICEM CFD by jburns on Thu Apr 13 2:51:37 PM Eastern Daylight Time 2023
+## solver Ansys Fluent
+"GEOM"
+"GEOM" "color" 16663866
+"LID"
+"LID" "color" 16663866
+"WALLS"
+"WALLS" "color" 16663866

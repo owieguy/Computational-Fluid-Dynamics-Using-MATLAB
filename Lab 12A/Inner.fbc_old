@@ -1,0 +1,6 @@
+# family_boco file written by ICEM CFD by jburns on Fri Apr 28 12:34:22 PM Eastern Daylight Time 2023
+## solver Ansys Fluent
+"CROSS"
+"OVERSET"
+"INNER_FLUID"
+"INNER_FLUID" "color" 5321725

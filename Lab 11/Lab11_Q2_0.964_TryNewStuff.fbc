@@ -1,0 +1,7 @@
+# family_boco file written by ICEM CFD by jburns on Fri Apr 21 12:49:18 PM Eastern Daylight Time 2023
+## solver Ansys Fluent
+"GEOM"
+"INNER"
+"OUTER"
+"FLUID"
+

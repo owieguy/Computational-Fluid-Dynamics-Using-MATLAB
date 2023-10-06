@@ -1,0 +1,51 @@
+// tetin file version 1.1
+// written by med emergency save - version 14.0 on Sun Apr 07 12:27:49 2013
+// written by ICEM CFD - version 19.1 on Mon Apr 5 11:47:28 2021
+// written by ICEM CFD - version 20.1 on Mon Apr 5 14:40:27 2021
+// written by ICEM CFD - version 21.2 on Thu Apr 27 12:19:04 2023
+// written by ICEM CFD - version 22.2 on Fri Apr 28 12:11:11 2023
+
+set_triangulation_tolerance 0.001
+define_family WALL color 16663866
+define_family OUTER_FLUID color 3688446
+
+prescribed_point 0 0 0 family WALL name pnt.00
+prescribed_point 1 1 0 family WALL name pnt.02
+prescribed_point 1 -1 0 family WALL name pnt.03
+prescribed_point -1 -1 0 family WALL name pnt.04
+prescribed_point -1 1 0 family WALL name pnt.05
+prescribed_point -1 10 0 family WALL name pnt.06
+prescribed_point 1 10 0 family WALL name pnt.07
+prescribed_point 10 1 0 family WALL name pnt.08
+prescribed_point 10 -1 0 family WALL name pnt.09
+prescribed_point 1 -10 0 family WALL name pnt.10
+prescribed_point -1 -10 0 family WALL name pnt.11
+prescribed_point -10 -1 0 family WALL name pnt.12
+prescribed_point -10 1 0 family WALL name pnt.13
+prescribed_point 0 50 0 family WALL name pnt.14
+prescribed_point 50 0 0 family WALL name pnt.15
+prescribed_point 12 0 0 family WALL name pnt.17
+prescribed_point 0 12 0 family WALL name pnt.18
+prescribed_point 7.0717000961304 7.0717000961304 0 family WALL name pnt.21
+prescribed_point -7.0717000961304 7.0717000961304 0 family WALL name pnt.22
+prescribed_point -7.0717000961304 -7.0717000961304 0 family WALL name pnt.23
+prescribed_point 7.0717000961304 -7.0717000961304 0 family WALL name pnt.24
+define_curve family WALL tetra_size 1e+10 name crv.00
+bspline
+9,3,1
+0,0,0,1.5707963267949,1.5707963267949
+3.1415926535898,3.1415926535898,4.7123889803847,4.7123889803847,6.2831853071796
+6.2831853071796,6.2831853071796
+50,0,0,1
+35.355339059327,35.355339059327,0,0.70710678118655
+3.0616169978684e-15,50,0,1
+-35.355339059327,35.355339059327,0,0.70710678118655
+-50,6.1232339957368e-15,0,1
+-35.355339059327,-35.355339059327,0,0.70710678118655
+-9.1848509936051e-15,-50,0,1
+35.355339059327,-35.355339059327,0,0.70710678118655
+50,-1.2246467991474e-14,0,1
+affix 0
+define_model 0.40000001 reference_size 1
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

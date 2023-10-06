@@ -1,0 +1,5 @@
+# family_boco file written by ICEM CFD by jburns on Fri Apr 28 12:55:42 PM Eastern Daylight Time 2023
+## solver Ansys Fluent
+"WALL"
+"OUTER_FLUID"
+"OUTER_FLUID" "color" 3688450

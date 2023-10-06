@@ -1,0 +1,103 @@
+// tetin file version 1.1
+// written by med emergency save - version 14.0 on Sun Apr 07 12:27:49 2013
+// written by ICEM CFD - version 19.1 on Mon Apr 5 11:47:28 2021
+// written by ICEM CFD - version 20.1 on Mon Apr 5 14:35:42 2021
+// written by ICEM CFD - version 21.2 on Thu Apr 27 12:00:35 2023
+// written by ICEM CFD - version 22.2 on Fri Apr 28 12:34:22 2023
+
+set_triangulation_tolerance 0.001
+define_family CROSS color 3400339
+define_family OVERSET color 7140915
+define_family INNER_FLUID color 5321725
+
+define_curve family CROSS tetra_size 1e+10 name crv.01
+bspline
+2,2,0
+0,0,1,1
+-1,1,0
+-1,10,0
+define_curve family CROSS tetra_size 1e+10 name crv.02
+bspline
+2,2,0
+0,0,1,1
+-1,10,0
+1,10,0
+define_curve family CROSS tetra_size 1e+10 name crv.03
+bspline
+2,2,0
+0,0,1,1
+1,10,0
+1,1,0
+define_curve family CROSS tetra_size 1e+10 name crv.04
+bspline
+2,2,0
+0,0,1,1
+1,1,0
+10,1,0
+define_curve family CROSS tetra_size 1e+10 name crv.05
+bspline
+2,2,0
+0,0,1,1
+10,1,0
+10,-1,0
+define_curve family CROSS tetra_size 1e+10 name crv.06
+bspline
+2,2,0
+0,0,1,1
+10,-1,0
+1,-1,0
+define_curve family CROSS tetra_size 1e+10 name crv.07
+bspline
+2,2,0
+0,0,1,1
+1,-1,0
+1,-10,0
+define_curve family CROSS tetra_size 1e+10 name crv.08
+bspline
+2,2,0
+0,0,1,1
+1,-10,0
+-1,-10,0
+define_curve family CROSS tetra_size 1e+10 name crv.09
+bspline
+2,2,0
+0,0,1,1
+-1,-10,0
+-1,-1,0
+define_curve family CROSS tetra_size 1e+10 name crv.10
+bspline
+2,2,0
+0,0,1,1
+-1,-1,0
+-10,-1,0
+define_curve family CROSS tetra_size 1e+10 name crv.11
+bspline
+2,2,0
+0,0,1,1
+-10,-1,0
+-10,1,0
+define_curve family CROSS tetra_size 1e+10 name crv.12
+bspline
+2,2,0
+0,0,1,1
+-10,1,0
+-1,1,0
+define_curve family OVERSET tetra_size 1e+10 name crv.13
+bspline
+9,3,1
+0,0,0,1.5707963267949,1.5707963267949
+3.1415926535898,3.1415926535898,4.7123889803847,4.7123889803847,6.2831853071796
+6.2831853071796,6.2831853071796
+12,0,0,1
+8.4852813742386,8.4852813742386,0,0.70710678118655
+7.3478807948841e-16,12,0,1
+-8.4852813742386,8.4852813742386,0,0.70710678118655
+-12,1.4695761589768e-15,0,1
+-8.4852813742386,-8.4852813742386,0,0.70710678118655
+-2.2043642384652e-15,-12,0,1
+8.4852813742386,-8.4852813742386,0,0.70710678118655
+12,-2.9391523179536e-15,0,1
+affix 0
+define_model 0.40000001 reference_size 1
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

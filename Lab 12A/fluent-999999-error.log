@@ -1,0 +1,28 @@
+Node 999999 Fatal signal raised sig = Segmentation fault
+ 68510c70 CX_Primitive_Error
+ 9d480cc0 seh_filter_exe
+ 685b0f90 logical_right_shift
+ 8a04f050 _C_specific_handler
+ 9f9922c0 _chkstk
+ 9f941070 RtlRaiseException
+ 9f990ee0 KiUserExceptionDispatcher
+ 66693e30 cx_strdup
+ 6859c070 eval
+ 6859c070 eval
+ 6859c070 eval
+ 6859c070 eval
+ 6859d860 set_cc
+ 6859e1a0 eval_errprotect
+ 6859c070 eval
+ 6859c070 eval
+ 6859c070 eval
+ 6859c070 eval
+ 6859d860 set_cc
+ 6859e1a0 eval_errprotect
+ 68511bd0 CX_Interpret_String
+ 66799840 rpgetvar_errprotect
+ 685b0f90 logical_right_shift
+ 9f3b75f0 BaseThreadInitThunk
+ 9f942680 RtlUserThreadStart
+
+Error [node 999999] [time 4/28/23 12:39:44] Abnormal Exit!

@@ -1,0 +1,28 @@
+# Written by ICEM CFD 22.2, user jburns, Thu Apr 13 2:51:37 PM Eastern Daylight Time 2023
+
+begin family GEOM
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family GEOM
+
+begin family LID
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family LID
+
+begin family WALLS
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family WALLS

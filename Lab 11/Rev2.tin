@@ -1,0 +1,173 @@
+// tetin file version 1.1
+// written by ICEM CFD 4.1.PRE_RELEASE (MED)
+// written by ICEM CFD 4.2.PRE_RELEASE (MED) on Mon Feb 25 16:31:48 2002
+// written by ICEM CFD 4.2 (MED) on Wed Mar 20 09:37:03 2002
+// written by ICEM CFD 4.2 (MED) on Wed Mar 20 09:39:36 2002
+// written by ICEM CFD - version 14.0 on Thu Feb 28 13:40:16 2013
+// written by ICEM CFD - version 19.1 on Wed Jan 16 14:02:46 2019
+// written by ICEM CFD - version 22.2 on Fri Apr 21 12:04:56 2023
+// written by ICEM CFD - version 22.2 on Fri Apr 21 12:16:12 2023
+
+set_triangulation_tolerance 9.9999997e-05
+define_family CURVES color 8336365
+define_family POINTS color 3385555
+define_family INLET_1 color 16214067
+define_family INLET_2 color 3407186
+define_family OUTLET color 3387852
+define_family GEOM color 16663866
+define_family INLET_3 color 4014590
+define_family FLUID color 12109107
+
+prescribed_point 0 16 0 family POINTS name POINTS/2
+prescribed_point 32 0 0 family POINTS name POINTS/12
+prescribed_point 52.539237976074 -4.5385341644287 0 family POINTS name POINTS/9
+prescribed_point 56.54211807251 -4.5385341644287 0 family POINTS name POINTS/8
+prescribed_point 52.539237976074 7.4614658355713 0 family POINTS name POINTS/10
+prescribed_point 56.54211807251 11.465044021606 0 family POINTS name POINTS/11
+prescribed_point 64 32 0 family POINTS name POINTS/7
+prescribed_point 48 64 0 family POINTS name POINTS/5
+prescribed_point 32 16 0 family POINTS name POINTS/3
+prescribed_point 0 0 0 family POINTS name POINTS/1
+prescribed_point 64 64 0 family POINTS name POINTS/6
+prescribed_point 48 32 0 family POINTS name POINTS/4
+prescribed_point 44.489757537842 22 0 family GEOM name pnt.17
+prescribed_point 41.32674407959 19 0 family GEOM name pnt.18
+prescribed_point 41.44083404541 19.041080474854 0 family GEOM name pnt.19
+prescribed_point 24 19 0 family GEOM name pnt.20
+prescribed_point 24 22 0 family GEOM name pnt.21
+define_curve family INLET_1 tetra_size 1 name CURVES/1
+bspline
+2,2,0
+0,0,16,16
+0,16,0
+0,0,0
+define_curve family CURVES tetra_size 1 name CURVES/2
+bspline
+2,2,0
+0,0,32,32
+0,16,0
+32,16,0
+define_curve family CURVES tetra_size 1 name CURVES/3
+bspline
+2,2,0
+0,0,32,32
+0,0,0
+32,0,0
+define_curve family CURVES tetra_size 1 name CURVES/6
+bspline
+2,2,0
+0,0,32,32
+48,64,0
+48,32,0
+define_curve family OUTLET tetra_size 1 name CURVES/7
+bspline
+2,2,0
+0,0,16,16
+48,64,0
+64,64,0
+define_curve family CURVES tetra_size 1 name CURVES/8
+bspline
+2,2,0
+0,0,32,32
+64,64,0
+64,32,0
+define_curve family CURVES tetra_size 1 name CURVES/9
+bspline
+2,2,0
+0,0,16.0035782,16.0035782
+56.5421181,-4.53853369,0
+56.5421181,11.465044,0
+define_curve family CURVES tetra_size 1 name CURVES/10
+bspline
+2,2,0
+0,0,12,12
+52.539238,7.46146631,0
+52.539238,-4.53853369,0
+define_curve family INLET_2 tetra_size 1 name CURVES/11
+bspline
+2,2,0
+0,0,4.00287914,4.00287914
+52.539238,-4.53853369,0
+56.5421181,-4.53853369,0
+define_curve family CURVES tetra_size 1 name CURVES/4
+bspline
+8,8,0
+0,0,0,0,0
+0,0,0,23.084224700928,23.084224700928
+23.084224700928,23.084224700928,23.084224700928,23.084224700928,23.084224700928
+23.084224700928
+32,0,0
+35.185878583245,0,0
+38.371741379916,0.37005106208988,0
+41.506044889038,1.1101305543441,0
+44.537188106675,2.2112792443117,0
+47.415684597802,3.6555107954492,0
+50.096217842774,5.4166082129208,0
+52.539238004249,7.4614656610615,0
+define_curve family CURVES tetra_size 1 name CURVES/4.7
+bspline
+8,8,0
+28.952117919922,28.952117919922,28.952117919922,28.952117919922,28.952117919922
+28.952117919922,28.952117919922,28.952117919922,52.0305634,52.0305634
+52.0305634,52.0305634,52.0305634,52.0305634,52.0305634
+52.0305634
+56.542117619071,11.465044040108,0
+58.586036789161,13.907809387314,0
+60.346296591952,16.587919384269,0
+61.789822984741,19.465848076717,0
+62.890424872035,22.496309798021,0
+63.630133967892,25.629854178912,0
+64,28.814919013216,0
+64,32,0
+define_curve family INLET_3 tetra_size 1e+10 name crv.14 vertex1 pnt.21 vertex2 pnt.20
+bspline
+2,2,0
+0,0,1,1
+24,22,0
+24,19,0
+define_curve family CURVES tetra_size 1e+10 name crv.16 vertex1 pnt.21 vertex2 pnt.17
+bspline
+2,2,0
+0,0,1,1
+24,22,0
+44.489757537842,22,0
+define_curve family CURVES tetra_size 1e+10 name crv.17 vertex1 pnt.20 vertex2 pnt.18
+bspline
+2,2,0
+0,0,1,1
+24,19,0
+41.32674407959,19,0
+define_curve family CURVES tetra_size 1 name CURVES/5
+bspline
+8,8,0
+0,0,0,0,0
+0,0,0,10.307035446167,10.307035446167
+10.307035446167,10.307035446167,10.307035446167,10.307035446167,10.307035446167
+10.307035446167
+32,16,0
+33.422485004808,16,0
+34.84496341697,16.147546496553,0
+36.249083340208,16.442631299327,0
+37.616474266034,16.882404906801,0
+38.929364071818,17.461150718738,0
+40.171166201127,18.170484207395,0
+41.32695978881,18.999699646899,0
+define_curve family CURVES tetra_size 1 name crv.19
+bspline
+8,8,0
+14.8337059021,14.8337059021,14.8337059021,14.8337059021,14.8337059021
+14.8337059021,14.8337059021,14.8337059021,26.0152817,26.0152817
+26.0152817,26.0152817,26.0152817,26.0152817,26.0152817
+26.0152817
+44.489902228647,21.999884080159,0
+45.454400595214,23.204518310437,0
+46.283349704281,24.517681104607,0
+46.962094701363,25.92107009621,0
+47.47906918359,27.393909792994,0
+47.826352959133,28.913644896416,0
+48,30.456818744273,0
+48,32,0
+affix 0
+define_model 0.40000001 reference_size 1
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

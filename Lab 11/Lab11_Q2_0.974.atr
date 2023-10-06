@@ -1,0 +1,21 @@
+# Written by ICEM CFD 22.2, user jburns, Fri Apr 21 12:45:37 PM Eastern Daylight Time 2023
+
+begin family GEOM
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family GEOM
+
+begin family INNER
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family INNER
+
+begin family OUTER
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family OUTER
+
+begin family FLUID
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family FLUID

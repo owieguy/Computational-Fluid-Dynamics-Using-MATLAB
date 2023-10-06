@@ -1,0 +1,41 @@
+# Written by ICEM CFD 22.2, user jburns, Fri Apr 21 12:16:19 PM Eastern Daylight Time 2023
+
+begin family CURVES
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family CURVES
+
+begin family POINTS
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family POINTS
+
+begin family INLET_1
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family INLET_1
+
+begin family INLET_2
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family INLET_2
+
+begin family OUTLET
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family OUTLET
+
+begin family GEOM
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family GEOM
+
+begin family INLET_3
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family INLET_3
+
+begin family FLUID
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family FLUID

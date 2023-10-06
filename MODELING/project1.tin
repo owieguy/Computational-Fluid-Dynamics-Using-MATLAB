@@ -1,0 +1,73 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 22.2 on Thu Apr 13 14:51:37 2023
+
+set_triangulation_tolerance 0.001
+# In ICEM CFD 4.2 the family_boco file is no longer tied to tetin
+# read_family_boco family_boco
+define_family GEOM color 16663866
+define_family LID color 3406933
+define_family WALLS color 10606643
+
+prescribed_point 0 0 0 family GEOM name pnt.00
+prescribed_point 1 0 0 family GEOM name pnt.01
+prescribed_point 1 1 0 family GEOM name pnt.02
+prescribed_point 0 1 0 family GEOM name pnt.03
+prescribed_point 0 1 0 family WALLS name WALLS.10
+prescribed_point 1 1 0 family WALLS name WALLS.11
+prescribed_point 1 0 0 family WALLS name WALLS.12
+prescribed_point 0 0 0 family WALLS name WALLS.13
+define_curve family LID tetra_size 1e+10 name crv.00 vertex1 WALLS.10 vertex2 WALLS.11
+bspline
+2,2,0
+0,0,1,1
+0,1,0
+1,1,0
+define_curve family WALLS tetra_size 1e+10 name crv.01 vertex1 WALLS.11 vertex2 WALLS.12
+bspline
+2,2,0
+0,0,1,1
+1,1,0
+1,0,0
+define_curve family WALLS tetra_size 1e+10 name crv.02 vertex1 WALLS.13 vertex2 WALLS.12
+bspline
+2,2,0
+0,0,1,1
+0,0,0
+1,0,0
+define_curve family WALLS tetra_size 1e+10 name crv.03 vertex1 WALLS.13 vertex2 WALLS.10
+bspline
+2,2,0
+0,0,1,1
+0,0,0
+0,1,0
+define_surface name srf.00 family WALLS tetra_size 1e+10
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.00
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve   crv.01
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve - crv.02
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.03
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+0,1,0
+1,1,0
+0,0,0
+1,0,0
+affix 0
+define_model 0.02 reference_size 1
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

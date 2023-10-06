@@ -1,0 +1,10 @@
+# family_boco file written by ICEM CFD by jburns on Tue Apr 18 2:30:51 PM Eastern Daylight Time 2023
+## solver Ansys Fluent
+"CURVES"
+"INLET_1"
+"INLET_2"
+"OUTLET"
+"FLUID"
+"FLUID" "color" 12109107
+"GEOM"
+
